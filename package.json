@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mbrandau/ip-whitelist/issues"
   },
-  "homepage": "https://github.com/mbrandau/ip-whitelist#readme"
+  "homepage": "https://github.com/mbrandau/ip-whitelist#readme",
+  "dependencies": {
+    "ipaddr.js": "^1.5.2"
+  }
 }
