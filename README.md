@@ -13,6 +13,7 @@ const ipWhitelist = require('ip-whitelist'), path = require('path');
 app.use(ipWhitelist(ipWhitelist.array(['127.0.0.1', '::1'])));
 
 // Use the predefined file callback
+// NOTE: One line in the file represents an IP address
 app.use(ipWhitelist(ipWhitelist.file(path.join(__dirname, 'whitelist.txt'))));
 
 // Create your own callback
@@ -39,7 +40,7 @@ app.use(ipWhitelist(ip => {
 }));
 app.post('/api/whitelist/:ip', (req, res) => {
     whitelist.push(req.params.ip);
-    res.end();
+    res.end('Added IP to whitelist');
 });
 app.get('/api/whitelist', (req, res) => {
     res.json(whitelist);
