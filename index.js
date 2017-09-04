@@ -7,7 +7,7 @@ const fs = require('fs'), ipaddr = require('ipaddr.js');
 function ipWhitelist(callback) {
     return function middleware(req, res, next) {
         const whitelisted = callback(req.ip);
-        if(whitelisted)next();
+        if (whitelisted) next();
         else {
             res.statusCode = 403;
             res.end('IP not whitelisted');
@@ -17,11 +17,11 @@ function ipWhitelist(callback) {
 
 function arrayCallback(array) {
     let ipAddresses = [];
-    array.forEach(el=>{
-        if(ipaddr.isValid(el))ipAddresses.push(el);
+    array.forEach(el => {
+        if (ipaddr.isValid(el)) ipAddresses.push(el);
     });
     return function (ip) {
-        return ipAddresses.indexOf(ip)!==-1;
+        return ipAddresses.indexOf(ip) !== -1;
     }
 }
 
