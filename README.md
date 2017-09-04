@@ -19,6 +19,12 @@ app.use(ipWhitelist(ipWhitelist.file(path.join(__dirname, 'whitelist.txt'))));
 app.use(ipWhitelist(ip => {
     return ip === '127.0.0.1' || ip === '::1';
 }));
+
+// Chain multiple callbacks
+app.use(ipWhitelist(ipWhitelist.chain([
+    ipWhitelist.file(path.join(__dirname, 'whitelist-a.txt')),
+    ipWhitelist.file(path.join(__dirname, 'whitelist-b.txt'))
+])));
 ```
 
 ### More advanced usage
