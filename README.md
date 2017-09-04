@@ -3,6 +3,8 @@ Basic middleware for whitelisting ip addresses
 
 ## Usage
 
+Install and save the package to your project `npm i --save ip-whitelist`
+
 ```js
 const ipWhitelist = require('ip-whitelist'), path = require('path');
 
@@ -17,4 +19,23 @@ app.use(ipWhitelist(ipWhitelist.file(path.join(__dirname, 'whitelist.txt'))));
 app.use(ipWhitelist(ip => {
     return ip === '127.0.0.1' || ip === '::1';
 }));
+```
+
+### More advanced usage
+
+```js
+const ipWhitelist = require('ip-whitelist');
+
+let whitelist = [];
+
+app.use(ipWhitelist(ip => {
+    return whitelist.indexOf(ip) !== -1;
+}));
+app.post('/api/whitelist/:ip', (req, res) => {
+    whitelist.push(req.params.ip);
+    res.end();
+});
+app.get('/api/whitelist', (req, res) => {
+    res.json(whitelist);
+});
 ```
