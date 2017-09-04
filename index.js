@@ -1,6 +1,7 @@
 module.exports = ipWhitelist;
 module.exports.array = arrayCallback;
 module.exports.file = fileCallback;
+module.exports.chain = chainCallback;
 
 const fs = require('fs'), ipaddr = require('ipaddr.js');
 
@@ -27,4 +28,11 @@ function arrayCallback(array) {
 
 function fileCallback(file) {
     return arrayCallback(fs.readFileSync(file).toString().split('\n'));
+}
+
+function chainCallback(callbacks) {
+    return function (ip) {
+        for (let i = 0; i < callbacks.length; i++) if (callbacks[i](ip)) return true;
+        return false;
+    }
 }
