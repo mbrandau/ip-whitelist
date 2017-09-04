@@ -1,4 +1,4 @@
-# ip-whitelist [![Build Status](https://travis-ci.org/mbrandau/ip-whitelist.svg?branch=master)](https://travis-ci.org/mbrandau/ip-whitelist) [![npm](https://img.shields.io/npm/v/ip-whitelist.svg)]() [![npm](https://img.shields.io/npm/dt/ip-whitelist.svg)]() [![GitHub issues](https://img.shields.io/github/issues/mbrandau/ip-whitelist.svg)]()
+# ip-whitelist [![Build Status](https://travis-ci.org/mbrandau/ip-whitelist.svg?branch=master)](https://travis-ci.org/mbrandau/ip-whitelist) [![npm](https://img.shields.io/npm/v/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![npm](https://img.shields.io/npm/dt/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![GitHub issues](https://img.shields.io/github/issues/mbrandau/ip-whitelist.svg)](https://github.com/mbrandau/ip-whitelist/issues)
 Basic middleware for whitelisting ip addresses
 
 ## Usage
