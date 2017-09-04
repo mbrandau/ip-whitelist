@@ -1,4 +1,4 @@
-# ip-whitelist
+# ip-whitelist [![Build Status](https://travis-ci.org/mbrandau/ip-whitelist.svg?branch=master)](https://travis-ci.org/mbrandau/ip-whitelist)
 Basic middleware for whitelisting ip addresses
 
 ## Usage
