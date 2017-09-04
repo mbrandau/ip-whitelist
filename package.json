@@ -1,0 +1,24 @@
+{
+  "name": "ip-whitelist",
+  "version": "1.0.0",
+  "description": "Basic middleware for whitelisting ip addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrandau/ip-whitelist.git"
+  },
+  "keywords": [
+    "middleware",
+    "ip",
+    "whitelist"
+  ],
+  "author": "Maximilian Brandau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrandau/ip-whitelist/issues"
+  },
+  "homepage": "https://github.com/mbrandau/ip-whitelist#readme"
+}
