@@ -22,10 +22,10 @@ app.use(ipWhitelist(ip => {
 }));
 
 // Chain multiple callbacks
-app.use(ipWhitelist(ipWhitelist.chain([
+app.use(ipWhitelist(ipWhitelist.chain(
     ipWhitelist.file(path.join(__dirname, 'whitelist-a.txt')),
     ipWhitelist.file(path.join(__dirname, 'whitelist-b.txt'))
-])));
+)));
 ```
 
 ### More advanced usage
