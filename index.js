@@ -37,6 +37,10 @@ function fileCallback(file) {
 }
 
 function chainCallback(callbacks) {
+    if (arguments.length > 1) { // Don't break old usage with passing an array of callbacks
+        // Turn passed arguments into an array
+        callbacks = Array.prototype.slice.call(arguments);
+    }
     return function (ip) {
         // Iterate through all the callbacks and check if the IP is whitelisted. If that is the case,
         // return true, otherwise iterate through the rest and return false.
