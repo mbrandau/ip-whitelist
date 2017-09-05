@@ -8,8 +8,9 @@ const fs = require('fs'), ipaddr = require('ipaddr.js');
 function ipWhitelist(callback) {
     // Return middleware function
     return function middleware(req, res, next) {
+        const ip = req.ip || req.socket.remoteAddress;
         // Check if the IP is whitelisted
-        const whitelisted = callback(req.ip);
+        const whitelisted = callback(ip);
         if (whitelisted) next(); // Pass on to next middleware if whitelisted
         else {
             // If not whitelisted end the request with code 403 (Forbidden)
