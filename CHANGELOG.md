@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.0 - unreleased
+## 1.1.0 - Sep 5, 2017
 
 - Added chain callback
   ```js
@@ -10,6 +10,7 @@
     ipWhitelist.file(path.join(__dirname, 'whitelist-b.txt'))
   )));
   ```
+- Fallback to socket IP address if req.ip is not available
 
 ## 1.0.0 - Sep 4, 2017
 
