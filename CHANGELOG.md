@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - Sep 10, 2017
+
+- 100% Code coverage
+
 ## 1.1.0 - Sep 5, 2017
 
 - Added chain callback
