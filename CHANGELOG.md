@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2 - Oct 2, 2018
+
+- Add second parameter to customize handling of blocked requests
+
 ## 1.1.1 - Sep 10, 2017
 
 - 100% Code coverage
