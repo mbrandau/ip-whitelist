@@ -35,6 +35,9 @@ app.use(ipWhitelist(ipWhitelist.chain(
 
 ### More advanced usage
 
+The default behaviour when handling a blocked IP is to end the request with status 403 and 'IP not whitelisted'.
+To change that, pass a function as a second parameter to `ipWhitelist()`. This function takes to arguments: `req` and `res`.
+
 ```js
 const ipWhitelist = require('ip-whitelist');
 
@@ -42,6 +45,9 @@ let whitelist = [];
 
 app.use(ipWhitelist(ip => {
     return whitelist.indexOf(ip) !== -1;
+}, function (req, res) { // Custom handling of blocked IPs
+  res.statusCode = 500;
+  res.end('You shall not pass!');
 }));
 app.post('/api/whitelist/:ip', (req, res) => {
     whitelist.push(req.params.ip);
