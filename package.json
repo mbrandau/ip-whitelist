@@ -4,6 +4,7 @@
   "description": "Basic middleware for whitelisting ip addresses",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --write index.js test/*.js",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
@@ -29,6 +30,7 @@
     "coveralls": "^2.13.1",
     "expect.js": "^0.3.1",
     "mocha": "^3.5.1",
-    "nyc": "^11.2.1"
+    "nyc": "^11.2.1",
+    "prettier": "1.14.3"
   }
 }
