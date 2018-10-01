@@ -3,15 +3,15 @@ module.exports.array = arrayCallback;
 module.exports.file = fileCallback;
 module.exports.chain = chainCallback;
 
-const fs = require("fs"),
-  ipaddr = require("ipaddr.js");
+const fs = require('fs'),
+  ipaddr = require('ipaddr.js');
 
 function ipWhitelist(callback, onBlocked) {
   if (!onBlocked)
     onBlocked = function(req, res) {
       // If not whitelisted end the request with code 403 (Forbidden)
       res.statusCode = 403;
-      res.end("IP not whitelisted");
+      res.end('IP not whitelisted');
     };
 
   // Return middleware function
@@ -45,7 +45,7 @@ function fileCallback(file) {
     fs
       .readFileSync(file)
       .toString()
-      .split("\n")
+      .split('\n')
   );
 }
 

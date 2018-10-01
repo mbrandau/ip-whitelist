@@ -4,7 +4,7 @@
   "description": "Basic middleware for whitelisting ip addresses",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write index.js test/*.js",
+    "prettier": "prettier --single-quote --write index.js test/*.js",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
