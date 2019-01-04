@@ -1,6 +1,6 @@
 # ip-whitelist
 
-[![Build Status](https://img.shields.io/travis/mbrandau/ip-whitelist.svg)](https://travis-ci.org/mbrandau/ip-whitelist) [![David](https://img.shields.io/david/mbrandau/ip-whitelist.svg)](https://david-dm.org/mbrandau/ip-whitelist) [![Coveralls](https://img.shields.io/coveralls/mbrandau/ip-whitelist.svg)](https://coveralls.io/github/mbrandau/ip-whitelist) [![npm](https://img.shields.io/npm/v/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![npm](https://img.shields.io/npm/dt/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![GitHub issues](https://img.shields.io/github/issues/mbrandau/ip-whitelist.svg)](https://github.com/mbrandau/ip-whitelist/issues)
+[![Build Status](https://img.shields.io/travis/mbrandau/ip-whitelist.svg)](https://travis-ci.org/mbrandau/ip-whitelist) [![David](https://img.shields.io/david/mbrandau/ip-whitelist.svg)](https://david-dm.org/mbrandau/ip-whitelist) [![Coveralls](https://img.shields.io/coveralls/mbrandau/ip-whitelist.svg)](https://coveralls.io/github/mbrandau/ip-whitelist) [![npm](https://img.shields.io/npm/v/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![npm](https://img.shields.io/npm/dt/ip-whitelist.svg)](https://www.npmjs.com/package/ip-whitelist) [![GitHub issues](https://img.shields.io/github/issues/mbrandau/ip-whitelist.svg)](https://github.com/mbrandau/ip-whitelist/issues) ![](https://img.shields.io/snyk/vulnerabilities/npm/ip-whitelist.svg)
 
 Basic middleware for whitelisting ip addresses
 
