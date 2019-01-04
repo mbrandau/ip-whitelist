@@ -1,6 +1,6 @@
 {
   "name": "ip-whitelist",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Basic middleware for whitelisting ip addresses",
   "main": "index.js",
   "scripts": {
