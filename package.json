@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/mbrandau/ip-whitelist#readme",
   "dependencies": {
-    "ipaddr.js": "^1.8.1"
+    "ipaddr.js": "^1.9.1"
   },
   "devDependencies": {
-    "coveralls": "^3.0.2",
+    "coveralls": "^3.0.6",
     "expect.js": "^0.3.1",
     "mocha": "^5.2.0",
-    "nyc": "^11.9.0",
+    "nyc": "^14.1.1",
     "prettier": "1.14.3"
   }
 }
