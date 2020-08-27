@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mbrandau/ip-whitelist#readme",
   "dependencies": {
-    "ipaddr.js": "^1.9.1"
+    "ipaddr.js": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "3.0.6",
